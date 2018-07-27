@@ -1,3 +1,9 @@
+<?php
+include('login.php');
+// session_start();
+        // print_r($_SESSION);exit();
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -286,8 +292,53 @@ div.desc {
         <marquee>
         <b><i style="color: #00000f;">....quality is our trademark </i></b>
     </marquee>
+    </div> <div id="girl">
+    <img src="image/hox.jpg" class="image-logo">
+    <div style="width: 100px; float: left;">
+        <br>
+        <br>
+        <br>
+        <marquee>
+        <b><i style="color: #00000f;">....quality is our trademark </i></b>
+    </marquee>
     </div>
 <ul id="menu">
+    <li><a href="index.php">Home</a></li>
+    <?php
+if(isset($_SESSION['firstname'])){ ?>
+  <ul>
+    <li class="dropdown">
+  <a href="#" class="dropdown">Welcome <?php echo $_SESSION['firstname']; ?></a>
+  <div class="dropdown-content">
+  <a href="profile.php">My Profile</a>
+  <a href="Sign Up.php">Logout</a>
+</div>
+</li>
+  <?php }else{ ?>
+
+    <li><a href="Sign Up.php">Sign Up</a></li>
+
+<?php };
+
+  ?>
+      
+      <li class="dropdown">
+    <a href="#" class="dropbtn">Blog</a>
+    <div class="dropdown-content">
+      <a href=# onclick="window.open('http://www.moondockcityproduction.blogspot.com');">NEWS BLOG</a>
+      <a href="http://www.moondockcityproduction.blogspot.com">BLOG1</a>
+      <a href=# onclick="window.open('http://www.blogger.com');">Blogger</a>
+      </div>
+</li>
+    <li><a href="contact us.php">Contact Us</a></li>
+    <li><a href="luz.php">Company</a></li>
+    <li><a href="about us.php"> About Us</a></li>
+    <li><a href="our staff.php"> Our Staff</a></li>
+    <li><a href="Gallery.php"> Gallery</a></li>
+  
+</ul>
+</div>
+<!-- <ul id="menu">
         <li><a href="index.php">Home</a></li>
         <li><a href="Sign Up.php">Sign Up</a></li>
             
@@ -306,7 +357,7 @@ div.desc {
         <li><a href="gallery.php"> Gallery</a></li>
     
 </ul>
-</div>
+</div> -->
 </head>
 <body>
 <div class="wraper">

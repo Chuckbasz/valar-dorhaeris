@@ -139,7 +139,9 @@ footer{
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
 
@@ -221,6 +223,9 @@ if($error == 1){
 
 if($error == 2){     
             echo "<div class='alert-danger' style='height:50px; text-align:center; margin-top:20px;'><strong> Oops! Sorry That Account Has been Disabled Please contact Admin for Help</strong> </div>";
+};
+if($error == 6){     
+            echo "<div class='alert-danger' style='height:50px; text-align:center; margin-top:20px;'><strong> Oops! Sorry you have to login to view this page</strong> </div>";
 };
 };
 ?>
